@@ -26,4 +26,4 @@ jobs:
 
       - name: Build & Push Image
         run: |
-          docker build -t ghcr.io/kloudlite/nats-cli:v1.0.5 --push
+          docker build . -t ghcr.io/kloudlite/nats-cli:v1.0.5 --push
