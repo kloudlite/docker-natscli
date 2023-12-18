@@ -25,6 +25,5 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build & Push Image
-        if: startsWith(github.ref, 'refs/heads/release')
         run: |
           docker build -t ghcr.io/kloudlite/nats-cli:v1.0.5 --push
